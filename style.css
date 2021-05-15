@@ -117,7 +117,7 @@ img {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
-    right: 0;
+    right: -100%;
     width: 80%;
     height: 100%;
     padding: 2rem;
@@ -125,4 +125,134 @@ img {
     transition: 0.5s;
     backdrop-filter: blur(10px);
   }
+}
+.nav__item {
+  margin-bottom: var(--mb-4);
+}
+.nav__link {
+  position: relative;
+  color: var(--dark-color);
+  font-family: var(--body-font);
+  font-size: 1.2rem;
+  /* padding-bottom: 200px; */
+}
+.nav__menu ul {
+  padding: 10px;
+}
+.nav__link:hover {
+  color: var(--first-color);
+}
+.nav__logo {
+  color: var(--white-color);
+}
+.nav__toggle {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.show {
+  right: 0;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.home {
+  position: relative;
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+.home__container {
+  height: calc(100vh - var(--header-height));
+  row-gap: 5rem;
+}
+.home__title {
+  align-self: flex-end;
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+  line-height: 0.8;
+}
+.home__title span {
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+.home__scroll {
+  align-self: flex-end;
+  padding-bottom: var(--mb-4);
+}
+.home__scroll-link {
+  writing-mode: vertical-lr;
+  transition: rotate(-180deg);
+  color: var(--white-color);
+  /* font-family: --; */
+}
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 395px;
+}
+.about__container {
+  justify-items: center;
+  row-gap: 3rem;
+  text-align: center;
+}
+.about__img {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 120px;
+  height: 120px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__img img {
+  width: 100px;
+}
+.about__subtitle {
+  font-style: var(--h2-font-size);
+  color: var(--first-color);
+  margin: var(--mb-1);
+}
+.about__text {
+  margin-bottom: var(--mb-4);
+}
+.about__profession {
+  display: block;
+  margin-bottom: var(--mb-4);
+}
+.about_social-icon {
+  font-size: 1.4rem;
+  margin: 0 var(--mb-1);
+}
+.about_social-icon:hover {
+  color: var(--first-color);
+}
+.skill__container {
+  row-gap: 2rem;
+}
+.skills__subtitle {
+  margin-bottom: var(--mb-3);
+  color: var(--first-color);
+}
+.skills__name {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-right: var(--mb-2);
+  margin-bottom: var(--mb-3);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--white-color);
+  border-radius: 0.25rem;
+}
+.skills__name:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+.skills__img img {
+  border-radius: 0.5rem;
 }
