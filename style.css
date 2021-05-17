@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
 :root {
   --header-height: 3rem;
   --font-meddium: 500;
@@ -289,4 +292,113 @@ img {
 }
 .portfolio__link-name {
   color: var(--dark-color);
+}
+
+.contact__container {
+  row-gap: 2rem;
+}
+.contact__subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+}
+.contact__text {
+  display: inline-block;
+  margin-bottom: var(--mb-2);
+}
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+.contact__input {
+  width: 100%;
+  padding: 0.8rem;
+  outline: none;
+  border: 1.5px solid var(--dark-color);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+}
+.contact__button {
+  display: block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 0.75rem;
+  margin-left: auto;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+}
+.footer {
+  background-color: var(--dark-color);
+  padding: 1.3rem;
+  margin-top: 0.8rem;
+}
+.footer__container {
+  row-gap: 2rem;
+}
+.footer__title {
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+  margin-bottom: var(--mb-2);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer__link {
+  padding: 0.25rem 0;
+}
+.footer__link:hover {
+  color: var(--first-color);
+}
+.footer__social {
+  font-size: 1.4rem;
+  margin-right: var(--mb-1);
+}
+.footer__social:hover {
+  color: var(--first-color);
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 4rem;
+  }
+  .section-title {
+    margin-bottom: 3rem;
+  }
+  .section-title::after {
+    width: 64px;
+    top: 3rem;
+  }
+  nav {
+    height: calc(var(--header-height) + 1rem);
+    display: flex;
+    flex-direction: row;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav__item {
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+  .nav__link {
+    color: var(--white-color);
+  }
+  .nav__link:hover {
+    color: var(--white-color);
+  }
 }
