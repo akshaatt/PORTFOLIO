@@ -40,3 +40,13 @@ function scrollActive() {
     }
   });
 }
+const stroke = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+
+stroke.reveal(".home__title", {});
+stroke.reveal(".home__scroll", { delay: 200 });
+stroke.reveal(".home__img", { origin: "right", delay: 400 });
